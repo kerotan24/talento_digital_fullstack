@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*selector de etiqueta*/
+body {
+    background-color: rgb(227, 252, 220);
+}
+h2 {
+    color: rgb(0, 221, 250);
+    font-size: 30px;
+}
+
+p {
+    color: #ebebeb;
+    font-size: 20px;
+    background-color:gray;
+}
+area {
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    
+}
+header {
+    color: #ff0000;
+    font-size: 50px;
+    text-align: center;
+    background-color: bisque;
+}
+footer {
+    background-color: aquamarine;
+    color: rgba(0, 0, 0, 0.848);
+    font-size: 15px;
+    text-align: center;
+}
+/* selector de clase*/
+.is-centered {
+    text-align: center;
+}
+
+.is-white{
+    color: white
+}
+/*el dibujo de la canela*/
+#avatar {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 10%;
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(0, 255, 162);
+    box-shadow: 5px 5px 5px 5px rgba(116, 193, 165, 0.329); 
+   
+}
+/*id tiene mayor jerarquia*/
+

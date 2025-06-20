@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /*Para que el body ocupe toda la pantalla*/
+}
+
+.header {
+    background: #00c853;
+    color: white;
+    text-align: center;
+}
+
+.contenido {
+    padding: 2rem;
+    flex: 1; /*Para que el contenido use todo el espacio disponible */
+}
+
+.materiales {
+    max-width: 30em;
+    padding: 2em;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+footer {
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+.contenido {    
+    width: 100%;
+    margin: auto;
+}
+footer {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+.contenido {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 0.5rem;
+}
+footer {
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 0.5rem;
+}
+}
+
+@media (min-width: 1440px) {
+.contenido {
+    width: 100%;
+    margin: auto;
+  }
+footer {
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 0.5rem;
+}
+}

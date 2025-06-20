@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div>
+        <h1>GIFs Destacados del manga Yotsubato</h1>
+        <p>Haz clic en las imagenes para verlas en grande ojito</p>
+        
+        <div class="imagenes">
+            <span class="imagen">
+                <img src="img/shimau.png" alt="">
+            </span>
+            <span class="imagen">
+                <img src="img/drill.gif" alt="">
+            </span>
+            <span class="imagen">
+                <img src="img/home.gif" alt="">
+            </span>
+            <span class="imagen">
+                <img src="img/spin.gif" alt="">
+            </span>
+             <span class="imagen">
+                <img src="img/animation.gif" alt="">
+            </span>
+            <span class="imagen">
+                <img src="img/witches.png" alt="">
+            </span><span class="imagen">
+                <img src="img/i_love_fuuka.png" alt="">
+            </span>
+            <span class="imagen">
+                <img src="img/ai.jpg" alt="">
+            </span>
+        </div>
+        <div class="modal">
+            <button class="anterior">Anterior</button>
+            <button class="siguiente">Siguiente</button>
+        </div>
+    </div>
+
+<script>
+    $(document).ready(function(){
+        const imagenes = $(".imagen");
+        console.log("!");
+        $(".imagen").click(function(){
+            console.log("click!!!");
+            $(".modal").show();
+        })
+
+        //const modal = $(".modal");
+        //imagenes.click(function(){
+        //    modal.show();
+        //})
+    })
+</script>
+
+
+</body>
+</html>

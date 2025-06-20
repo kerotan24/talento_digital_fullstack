@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FOODHERO</title>
+</head>
+
+<body>
+
+  <!-- Encabezado con nombre del emprendimiento y menú -->
+  <header>
+  <!-- <h1>FOODHERO</h1> -->
+    <img src="img/foodhero.png" alt="">
+    <nav>
+      <ul>
+        <!-- Falta: Poner otras secciones de href -->
+        <li><a href="#como-funciona">¿Cómo funciona?</a></li>
+        <li><a href= "#restaurantes">¿Restaurantes Asociados?</a></li>
+        <li><a href="#reserva">Reserva tu comida</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección de explicación -->
+  <section id="¿Cómo-funciona?">
+    <h2>¿Cómo funciona?</h2>
+    <p>
+      FOODHERO conecta restaurantes que poseen excedentes de comida con personas interesadas en comprarlos a menor precio. 
+      <br>
+      Busca tu restaurante favorito, elige tus platos, reserva tu comida y retírala en el horario que mas te acomode.
+      <br>
+      Cada día se suman mas restaurantes, ¡Solo faltas tu!
+    </p>
+    <!-- Falta: Mejorar redacción -->
+  </section>
+
+  <!-- Sección de restaurantes con ofertas -->
+  <section id="restaurantes">
+    <h2>Restaurantes Asociados</h2>
+
+    <!-- Cada restaurante puede ir dentro de un <article> -->
+    <article>
+      <h3>La Buena Mesa</h3>
+      <ul>
+        <li>3 porciones de lasaña - $8.000</li>
+        <li>Ensaladas mixtas (2 unidades) - $3.000</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Los Pollos Hermanos</h3>
+      <ul>
+        <li>Cajita de pollo frito - $10.000</li>
+        <li>Combo pollo familiar - $12.000</li>
+        <li>Hot dog + bebida - $6.000</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>La Pizzería feliz</h3>
+      <ul>
+        <li>Combo Pizza + bebida - $12.000</li>
+        <li>combo familiar +  bebida de 3 litros - $18.500</li>
+      </ul>
+    </article>
+
+    <!-- Falta: Agregar más restaurantes -->
+  </section>
+
+  <!-- Formulario de reserva de pedidos -->
+  <section id="reserva">
+    <h2>Reserva tu comida</h2>
+    <form action="#" method="post">
+      <!-- Falta: Validaciones adicionales y estilos -->
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required><br>
+
+      <label for="restaurante">Restaurante:</label>
+      <select id="restaurante" name="restaurante" required>
+        <option value="">Selecciona un restaurante</option>
+        <option value="buena-mesa">La Buena Mesa</option>
+        <option value="pollos-hermanos">Los Pollos Hermanos</option>
+        <option value="La-pizzería-feliz">La Pizzería feliz</option>
+      </select><br>
+
+      <label for="hora">Hora de recogida:</label>
+      <input type="time" id="hora" name="hora" required><br>
+
+      <label for="comentarios">Comentarios:</label><br>
+      <textarea id="comentarios" name="comentarios" rows="4" cols="30" placeholder="Sin picante, cubiertos extra..."></textarea><br>
+
+      <button type="submit">Reservar</button>
+    </form>
+  </section>
+
+  <!-- Pie de página con contacto -->
+  <footer id="contacto">
+    <h3>Contacto</h3>
+    <p>Email: contacto@foodhero.cl</p>
+    <p>Teléfono: +56 9 1234 5678</p>
+    <p>
+      Síguenos en:
+      <a href="https://www.instagram.com/"><img src="img/ig.png" width="30" height="30" /></a>| 
+      <a href="https://www.facebook.com/"><img src="img/facebook.jpg"width="30" height="30"/> </a> |
+      <a href="https://www.x.com/"><img src="img/x.jpg"width="30" height="30"/> </a>
+      
+    </p>
+    <p>© 2025 FOODHERO. Todos los derechos reservados</p>
+    <!-- Falta: Íconos de redes sociales e información legal -->
+  </footer>
+
+</body>
+
+
+</html>

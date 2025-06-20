@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibroLibre</title>
+    <link rel="stylesheet" href="css/style.css" />  
+    <script src="JS/script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>LibroLibre</h1>
+        <nav>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#registro">Registro</a>
+            <a href="#nosotros">Sobre Nosotros</a>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section id="catalogo" >
+          <h2>Catálogo de libros</h2>
+          <input type="text" class="busqueda" placeholder="Buscar por título, autor o género">
+          <button class="botonBusqueda" buscarLibros >Buscar</button> 
+        </section>
+        
+
+    <!-- Libros -->
+        <div id="lista-libros">
+            <div class="libro">
+                <h3 class = "nombre">El Principito</h3>
+                <p><b>Autor: </b><span class = "autor">Antoine de Saint-Exupéry</span><p>
+                <p><b>Género:</b><span class = "genero"> Ficción</span></p>
+                <p>Una historia poética sobre un pequeño príncipe y sus viajes</p>
+            </div>
+            
+            <div class="libro">
+                <h3 class = "nombre">Dune</h3>
+                <p><b>Autor: </b><span class = "autor">Frank Herbert</span></p>
+                <p><b>Género:</b><span class = "genero"> Ficción</span></p>
+                <p>Leto Atreides es obligado a gobernar el planeta Arrakis, de donde viene la especie, droga fundamental para el viaje intergalactico  </p>
+            </div>
+
+             <div class="libro">
+                <h3 class = "nombre">Clean Code</h3>
+                <p><b>Autor: </b><span class = "autor"> Robert C. Martin</span><p>
+                <p><b>Género:</b><span class = "genero"> Programación</span></p>
+                <p>Una guía para escribir código limpio y mantenible</p>
+            </div>
+            
+        </div>
+
+    <!-- Registro de usuarios -->
+    <section>
+        <!-- aca -->
+         <h2>Registro de usuarios</h2>
+  <form action="tu_script_de_procesamiento.php" method="post">
+    <label for="nombre">Nombre completo:</label><br>
+    <input type="text registroNombre" id="nombre" name="nombre" required><br><br>
+
+    <label for="email">Correo electrónico:</label><br>
+    <input type="email registroCorreo" id="email" name="email" required><br><br>
+
+    <label for="mensaje">Contraseña:</label><br>
+    <textarea id="mensaje ContraseñaCorreo" name="mensaje" rows="5" required></textarea><br><br>
+    <button class ="submit registro">Registrarse</button>
+
+  </form>
+    </section>
+
+    </main>
+    <!-- Footer -->
+    <footer>
+        <section>
+            <h2>Sobre Nosotros</h2>
+            <p>LibroLibre es una biblioteca digital creada por 5 entusiastas de la lectura con el objetivo de facilitar el acceso a libros electrónicos y audiolibros de manera simple y eficiente.</p>
+        </section>
+    </footer>
+</body>
+</html>
